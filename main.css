@@ -1,0 +1,182 @@
+html,
+body{
+  height: 100%;
+  margin: 0;
+  font-family: arial, sans-serif;
+  line-height: 180%;
+  color: #666;
+  text-align: center;
+  background-color: #111;
+}
+.p1{
+  padding: 30px 0;
+  background: url(images/pimg.jpg) no-repeat center;
+  background-attachment: fixed;
+  min-height: 50%;
+}
+
+.p2{
+  background: url(images/pimg.jpg) no-repeat center;
+  background-attachment: fixed;
+  min-height: 6%;
+}
+
+.avatar{
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px -1px orange;
+}
+
+.name-avatar h1{
+  top: 30%;
+  font-size: 500%;
+  text-align: center;
+}
+
+.name-avatar h1:hover{
+  color: orange;
+  transition: 0.3s all;
+  transform: scale(1.1);
+}
+
+.light h1:hover{
+  color: orange;
+  transition: 0.3s all;
+  transform: scale(1.2);
+}
+
+.a1 h3:hover,
+.a2 h3:hover,
+.a3 h3:hover{
+  color: orange;
+  transition: 0.3s all;
+  transform: scale(1.5);
+}
+
+.a1 ul,
+.a2 ul,
+.a3 ul{
+  text-align: left;
+}
+
+.light h3{
+  color:
+}
+/*.p1,
+.p2,
+.p3,{
+  background-image: url(images/pimg.jpg) no-repeat center;
+  background-position: relative;
+  background-attachment: fixed;
+}
+
+.p1{
+  min-height: 50%;
+}
+
+.p2,
+.p3{
+  min-height: 30px;
+/ */
+/*  github and linkedin btns*/
+s-m{
+  padding: 200px 0 0;
+  position: absolute;
+  top: 60%;
+  transform: translateY(-60%);
+  width: 100%;
+  text-align: center;
+}
+
+.btn{
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  background: white;
+  margin: 10px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: orange;
+  overflow: hidden;
+  position: relative;
+}
+
+.btn i{
+  line-height: 90px;
+  font-size: 26px;
+  transition: 0.2s linear;
+}
+
+.btn:hover i{
+  transform: scale(1.3);
+  color: orange;
+}
+
+.btn::before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: red;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+.btn:hover::before{
+  animation: social 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+@keyframes social {
+  0%{
+    left: -110%;
+    top: 90%;
+  }
+  50%{
+    top: -30%;
+    left: 10%;
+  }
+  100%{
+    top: -10%;
+    left: -10%;
+  }
+}
+
+/* layout */
+.container-a{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.a1,
+.a2,
+.a3{
+  padding: auto;
+  width: 100%;
+}
+
+.light{
+  padding: 20px 100px;
+  color: #ddd;
+  background-color: #282e34;
+  border: 2px solid crimson;
+}
+
+.light p{
+  color: #e6e6ff;
+}
+
+.uni h1, h3, h4{
+  margin: 0;
+  color: pink;
+}
+
+footer{
+  background: crimson;
+  color: #ddd;
+  font-size: 18px;
+  padding: 8px 0;
+  margin-top: 10px;
+}
